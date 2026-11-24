@@ -1,4 +1,93 @@
 {
-  "updated": null,
-  "jobs": []
+  "updated": "2026-11-24T21:11+01:00",
+  "jobs": [
+    {
+      "id": "4478694251",
+      "title": "Senior Product Manager",
+      "company": "Lunar",
+      "location": "Copenhagen",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4478694251/",
+      "date_found": "2026-11-18",
+      "search_location": "Denmark",
+      "notes": ""
+    },
+    {
+      "id": "4467754028",
+      "title": "Staff Hardware Product Manager",
+      "company": "Veo Technologies",
+      "location": "Copenhagen",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4467754028/",
+      "date_found": "2026-11-18",
+      "search_location": "Denmark",
+      "notes": "Easy Apply"
+    },
+    {
+      "id": "4489774054",
+      "title": "Product Manager",
+      "company": "Laerdal Copenhagen",
+      "location": "Copenhagen",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4489774054/",
+      "date_found": "2026-11-19",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": "Easy Apply"
+    },
+    {
+      "id": "4490827936",
+      "title": "BMS Product Owner, 2-Year Maternity Cover",
+      "company": "Novo Nordisk",
+      "location": "Taastrup",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4490827936/",
+      "date_found": "2026-11-19",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4483682483",
+      "title": "Senior Product Manager (12 months parental leave cover)",
+      "company": "Coloplast",
+      "location": "Humlebæk",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4483682483/",
+      "date_found": "2026-11-19",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4487068121",
+      "title": "Produktchef – maksimalafbrydere og fremtidens el-infrastruktur",
+      "company": "ABB",
+      "location": "Ballerup",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4487068121/",
+      "date_found": "2026-11-19",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4493651984",
+      "title": "Chief Product Owner",
+      "company": "DFDS",
+      "location": "Copenhagen Municipality",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4493651984/",
+      "date_found": "2026-11-24",
+      "search_location": "Copenhagen",
+      "notes": ""
+    },
+    {
+      "id": "4493655910",
+      "title": "Staff Hardware Product Manager",
+      "company": "Veo Technologies",
+      "location": "Copenhagen",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4493655910/",
+      "date_found": "2026-11-24",
+      "search_location": "Copenhagen",
+      "notes": ""
+    }
+  ]
 }
