@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Job Feed</title>
+<style>
+  :root { --bg:#fafaf9; --fg:#1c1917; --muted:#78716c; --card:#fff; --line:#e7e5e4; --accent:#0a66c2; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1c1917; --fg:#f5f5f4; --muted:#a8a29e; --card:#292524; --line:#44403c; --accent:#70b5f9; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  .controls { display:flex; gap:8px; flex-wrap:wrap; margin-bottom: 20px; }
+  input, select { font:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--fg); }
+  input { flex: 1 1 220px; }
+  h2 { font-size: 15px; color: var(--muted); margin: 28px 0 8px; font-weight: 600; }
+  .job { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin-bottom:8px; }
+  .job a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .job a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .tag { display:inline-block; font-size:12px; padding:1px 8px; border-radius:999px; border:1px solid var(--line); margin-right:6px; }
+  .empty { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Job Feed</h1>
+  <p class="sub" id="summary">Loading…</p>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Filter by title, company or location">
+    <select id="loc"><option value="">All locations</option></select>
+  </div>
+  <div id="list"></div>
+</main>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let jobs = [];
+function render() {
+  const q = document.getElementById('q').value.toLowerCase();
+  const loc = document.getElementById('loc').value;
+  const shown = jobs.filter(j =>
+    (!loc || j.search_location === loc) &&
+    (!q || [j.title, j.company, j.location].join(' ').toLowerCase().includes(q)));
+  const byDate = {};
+  shown.forEach(j => (byDate[j.date_found] ||= []).push(j));
+  const dates = Object.keys(byDate).sort().reverse();
+  document.getElementById('list').innerHTML = dates.length ? dates.map(d => `
+    <h2>${esc(d)} · ${byDate[d].length} job${byDate[d].length > 1 ? 's' : ''}</h2>
+    ${byDate[d].map(j => `
+      <div class="job">
+        <a href="${esc(j.url)}" target="_blank" rel="noopener noreferrer">${esc(j.title)}</a>
+        <div class="meta">${esc(j.company)} · ${esc(j.location)}${j.workplace ? ' · ' + esc(j.workplace) : ''}</div>
+        <div class="meta">${j.search_location ? `<span class="tag">${esc(j.search_location)}</span>` : ''}${j.notes ? esc(j.notes) : ''}</div>
+      </div>`).join('')}`).join('') : '<p class="empty">No jobs match.</p>';
+}
+fetch('data/jobs.json', {cache: 'no-store'}).then(r => r.json()).then(data => {
+  jobs = data.jobs || [];
+  document.getElementById('summary').textContent =
+    `${jobs.length} jobs from LinkedIn alerts · last updated ${data.updated || 'never'}`;
+  const locs = [...new Set(jobs.map(j => j.search_location).filter(Boolean))].sort();
+  document.getElementById('loc').innerHTML += locs.map(l => `<option>${esc(l)}</option>`).join('');
+  render();
+}).catch(() => { document.getElementById('summary').textContent = 'Could not load jobs.'; });
+document.getElementById('q').addEventListener('input', render);
+document.getElementById('loc').addEventListener('change', render);
+</script>
+</body>
+</html>
