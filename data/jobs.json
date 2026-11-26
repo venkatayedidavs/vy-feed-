@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T21:11+01:00",
+  "updated": "2026-11-26T09:48+01:00",
   "jobs": [
     {
       "id": "4478694251",
@@ -87,6 +87,50 @@
       "url": "https://www.linkedin.com/jobs/view/4493655910/",
       "date_found": "2026-11-24",
       "search_location": "Copenhagen",
+      "notes": ""
+    },
+    {
+      "id": "4494168308",
+      "title": "Product Owner",
+      "company": "Experian",
+      "location": "Copenhagen Municipality",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4494168308/",
+      "date_found": "2026-11-25",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4493004070",
+      "title": "Product Owner",
+      "company": "LEMAN",
+      "location": "Greve Strand",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4493004070/",
+      "date_found": "2026-11-25",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4493003221",
+      "title": "Produktchef for brugerindgange",
+      "company": "DR - Danmarks Radio",
+      "location": "Copenhagen Municipality",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4493003221/",
+      "date_found": "2026-11-25",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4494158612",
+      "title": "Product Manager (Ordrestyring)",
+      "company": "Aceve",
+      "location": "Copenhagen",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4494158612/",
+      "date_found": "2026-11-25",
+      "search_location": "Copenhagen Metropolitan Area",
       "notes": ""
     }
   ]
