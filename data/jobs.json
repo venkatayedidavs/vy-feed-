@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T09:48+01:00",
+  "updated": "2026-11-28T09:48+01:00",
   "jobs": [
     {
       "id": "4478694251",
@@ -175,6 +175,94 @@
       "url": "https://www.linkedin.com/jobs/view/4485021877/",
       "date_found": "2026-11-26",
       "search_location": "Skåne County",
+      "notes": ""
+    },
+    {
+      "id": "4494961411",
+      "title": "Senior Embedded Software Product Owner – Expert",
+      "company": "Aurora Engineering AB",
+      "location": "Gothenburg",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4494961411/",
+      "date_found": "2026-11-27",
+      "search_location": "Greater Gothenburg Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4486373763",
+      "title": "Principal Global Product Manager - Software Integrations Offers",
+      "company": "Schneider Electric",
+      "location": "Lund",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4486373763/",
+      "date_found": "2026-11-27",
+      "search_location": "Greater Gothenburg Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4495503910",
+      "title": "Product Director",
+      "company": "Aceve",
+      "location": "Copenhagen",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4495503910/",
+      "date_found": "2026-11-27",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4495017573",
+      "title": "Senior Technical Product Manager",
+      "company": "Intuition IT Solutions",
+      "location": "Copenhagen",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4495017573/",
+      "date_found": "2026-11-27",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": "Easy Apply"
+    },
+    {
+      "id": "4494938712",
+      "title": "Technical Product Owner, Chipset Test & Support",
+      "company": "Demant",
+      "location": "Copenhagen Municipality",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4494938712/",
+      "date_found": "2026-11-27",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4494953029",
+      "title": "Global Product Manager Downstream, EndoIntelligence",
+      "company": "Ambu",
+      "location": "Copenhagen",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4494953029/",
+      "date_found": "2026-11-27",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4494947237",
+      "title": "Global Product Manager Downstream, EndoIntelligence",
+      "company": "Ambu",
+      "location": "Ballerup",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4494947237/",
+      "date_found": "2026-11-27",
+      "search_location": "Copenhagen Metropolitan Area",
+      "notes": ""
+    },
+    {
+      "id": "4495292483",
+      "title": "Product Manager til BankInvest",
+      "company": "BankInvest",
+      "location": "Copenhagen Municipality",
+      "workplace": "",
+      "url": "https://www.linkedin.com/jobs/view/4495292483/",
+      "date_found": "2026-11-27",
+      "search_location": "Copenhagen Metropolitan Area",
       "notes": ""
     }
   ]
